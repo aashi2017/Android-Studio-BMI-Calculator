@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#add8e6">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/gender"
+        android:textColor="#111E6C"
+            android:textSize="20dp" />
+
+    <ToggleButton
+        android:id="@+id/toggle2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="45dp"
+        android:textOff="@string/male"
+        android:textOn="@string/female"
+        android:background="#111E6C"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/height_cm"
+        android:textSize="20dp"
+        android:textColor="#111E6C"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="110dp"/>
+
+    <com.warkiz.widget.IndicatorSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        app:isb_max="200"
+        app:isb_min="100"
+        app:isb_progress="125"
+        app:isb_seek_smoothly="true"
+        app:isb_show_tick_texts="true"
+        app:isb_tick_texts_size="15sp"
+        app:isb_thumb_color="@color/blue"
+        app:isb_thumb_size="15dp"
+        app:isb_show_indicator="rounded_rectangle"
+        app:isb_indicator_color="@color/blue"
+        app:isb_indicator_text_color="@color/white"
+        app:isb_indicator_text_size="18sp"
+        app:isb_track_background_color="@color/blue"
+        app:isb_track_background_size="2dp"
+        app:isb_track_progress_color="#111E6C"
+        app:isb_track_progress_size="3dp"
+        app:isb_only_thumb_draggable="false"
+        android:id="@+id/HeightValue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weight_kg"
+            android:textSize="20dp"
+            android:textColor="#111E6C"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="190dp"/>
+
+        <com.warkiz.widget.IndicatorSeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            app:isb_max="200"
+            app:isb_min="0"
+            app:isb_progress="50"
+            app:isb_seek_smoothly="true"
+            app:isb_show_tick_texts="true"
+            app:isb_tick_texts_size="15sp"
+            app:isb_thumb_color="@color/blue"
+            app:isb_thumb_size="15dp"
+            app:isb_show_indicator="rounded_rectangle"
+            app:isb_indicator_color="@color/blue"
+            app:isb_indicator_text_color="@color/white"
+            app:isb_indicator_text_size="18sp"
+            app:isb_track_background_color="@color/blue"
+            app:isb_track_background_size="2dp"
+            app:isb_track_progress_color="#111E6C"
+            app:isb_track_progress_size="3dp"
+            app:isb_only_thumb_draggable="false"
+            android:id="@+id/WeightValue"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="260dp"
+            android:layout_marginLeft="50dp"
+            android:text="@string/calculate"
+            android:textSize="20dp"
+            android:id="@+id/btn"
+            android:textColor="@color/white"
+            android:background="#111E6C"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="25dp"
+            android:text="@string/here_is_your_bmi"
+            android:textColor="#111E6C"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginStart="10dp"
+            android:textSize="25dp"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:id="@+id/txt"/>
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="97dp"
+            android:layout_marginStart="10dp"
+            android:textSize="25dp"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:id="@+id/txt1" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/icon"
+            android:contentDescription="@string/todo" />
+
+    </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
